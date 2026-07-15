@@ -110,8 +110,8 @@
     transition:transform .45s var(--ease),box-shadow .45s var(--ease);
   }
   .case:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(0,0,0,.09)}
-  .case-photo{aspect-ratio:4/3;overflow:hidden}
-  .case-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+  .case-photo{position:relative;padding-top:75%;overflow:hidden}
+  .case-photo img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
   .case:hover .case-photo img{transform:scale(1.045)}
   .case-body{padding:22px 24px 26px}
   .case-num{font-size:clamp(1.9rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
